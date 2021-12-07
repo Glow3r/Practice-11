@@ -28,17 +28,7 @@ namespace Practice_11
 
         private string _pattern;
 
-        private void Information_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("Выполнил Гаврюшин К. А. ИСП-34.", "О программе", MessageBoxButton.OK, MessageBoxImage.Information);
-        }
-
-        private void Exit_Click(object sender, RoutedEventArgs e)
-        {
-            Close();
-        }
-
-        private void RegularExpressions_Click(object sender, RoutedEventArgs e)
+        private void GetMatches_Click(object sender, RoutedEventArgs e)
         {
             Regex regex = new Regex(_pattern);
             MatchCollection matches = regex.Matches(inputValue.Text);
@@ -60,6 +50,16 @@ namespace Practice_11
         {
             inputValue.Text = "a1a a22a a333a a4444a a55555a aba aca";
             _pattern = @"a\d+a";
+        }
+
+        private void Information_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Выполнил Гаврюшин К. А. ИСП-34.", "О программе", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
+
+        private void Exit_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
         }
     }
 }

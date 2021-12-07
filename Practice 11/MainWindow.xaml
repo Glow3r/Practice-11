@@ -23,7 +23,7 @@
 
         <Grid>
             <TextBox x:Name="inputValue" Height="20" Width="200"/>
-            <Button Height="20" Width="200" Margin="0,50,0,0" Content="Найти" Click="RegularExpressions_Click"/>
+            <Button Height="20" Width="200" Margin="0,50,0,0" Content="Найти" Click="GetMatches_Click"/>
         </Grid>
         
     </Grid>
